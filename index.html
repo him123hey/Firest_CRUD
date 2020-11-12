@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+
+        </div>
+        <div class="check">
+            <form action="#">
+                <label for="One">One</label>
+                <input type="checkbox" name="One" id="myCheck1" value="1"> 
+                <label for="Two">Two</label>
+                <input type="checkbox" name="Two" id="myCheck2" value="2"> 
+                <label for="Three">Three</label>
+                <input type="checkbox" name="Three" id="myCheck3" value="3"> 
+                <label for="Foure">Foure</label>
+                <input type="checkbox" name="Foure" id="myCheck4" value="4"> 
+                <label for="Five ">Five </label>
+                <input type="checkbox" name="Five" id="myCheck5" value="5">
+                <label for="Six">Six</label>
+                <input type="checkbox" name="Six" id="myCheck6" value="6">
+            </form>
+            <hr>
+            <div class="message" id="message">
+
+            </div>
+        </div>
+        <button onclick="startGame()">Start Game</button>
+    </div>
+    <script>
+    function startGame(){
+            var isCheck1 = document.getElementById('myCheck1');
+            if(isCheck1.checked == true){
+                document.getElementById('message').innerHTML= document.getElementById('myCheck1').value;
+            }else{
+                document.getElementById('message').innerHTML= 'Error!!';
+            }
+            var isCheck2 = document.getElementById('myCheck2');
+            if(isCheck2.checked == true){
+                document.getElementById('message').innerHTML= document.getElementById('myCheck2').value;
+            }else{
+                document.getElementById('message').innerHTML= 'Error!!';
+            }
+            var isCheck3 = document.getElementById('myCheck3');
+            if(isCheck3.checked == true){
+                document.getElementById('message').innerHTML= document.getElementById('myCheck3').value;
+            }else{
+                document.getElementById('message').innerHTML= 'Error!!';
+            }
+            var isCheck4 = document.getElementById('myCheck4');
+            if(isCheck4.checked == true){
+                document.getElementById('message').innerHTML= document.getElementById('myCheck4').value;
+            }else{
+                document.getElementById('message').innerHTML= 'Error!!';
+            }
+            var isCheck5 = document.getElementById('myCheck5');
+            if(isCheck5.checked == true){
+                document.getElementById('message').innerHTML= document.getElementById('myCheck5').value;
+            }else{
+                document.getElementById('message').innerHTML= 'Error!!';
+            }
+            var isCheck6 = document.getElementById('myCheck6');
+            if(isCheck6.checked == true){
+                document.getElementById('message').innerHTML= document.getElementById('myCheck6').value;
+            }else{
+                document.getElementById('message').innerHTML= 'Error!!';
+            }
+        }
+    </script>
+</body>
+</html>
